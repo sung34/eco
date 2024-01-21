@@ -16,9 +16,9 @@ const pretendardFont = localFont({
   variable: '--font-pretendard'
 })
 export const metadata: Metadata = {
-  title: "자인바이오에코",
+  title: "자인그린바이오",
   description:
-    "자인바이오에코는 친환경 농업제품 전문으로, 특허 받은 친환경 종이멀칭지 솔루션을 제안합니다.",
+    "자인그린바이오는 친환경 농업제품 전문으로, 특허 받은 친환경 생분해종이멀칭지 솔루션을 제안합니다.",
 
   };
 
@@ -39,7 +39,7 @@ export default function RootLayout({
           <a href="/" className="flex items-center gap-3 cursor-pointer group">
             <div className="w-12 h-12 group-hover:animate-[pulse_1s_ease-in-out_forwards] bg-emerald-600"></div>
             <span className="md:text-md lg:text-lg font-semibold text-nowrap group-hover:animate-[pulse_1s_ease-in-out_forwards]">
-              자인바이오에코
+              자인그린바이오
             </span>
           </a>
           <nav className="hidden pl-8 md:flex">
