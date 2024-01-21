@@ -1,26 +1,19 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import localFont from "next/font/local"
 import "./globals.css";
 
 // import Footer from "@/components/footer";
 // import { Nav } from "@/components/nav";
 // import { MobileNav } from "@/components/nav/mobileNav";
 
-
 const inter = Inter({ subsets: ["latin"] });
-const pretendardFont = localFont({
-  src: [{
-    path: './PretendardVariable.ttf',
-  }],
-  variable: '--font-pretendard'
-})
+
 export const metadata: Metadata = {
   title: "자인그린바이오",
   description:
     "자인그린바이오는 친환경 농업제품 전문으로, 특허 받은 친환경 생분해종이멀칭지 솔루션을 제안합니다.",
-
-  };
+  category: "친환경, 농업",
+};
 
 export default function RootLayout({
   children,
@@ -30,9 +23,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body
-        className={ `${pretendardFont.variable} ` + 
+        className={
           inter.className +
-          "relative font-pretendard"
+          "relative"
         }
       >
         {/* <div className="sticky top-0 z-40 flex items-center justify-between w-full h-12 p-10 bg-white box">
@@ -52,7 +45,6 @@ export default function RootLayout({
         {children}
         <Footer /> */}
         {children}
-        
       </body>
     </html>
   );

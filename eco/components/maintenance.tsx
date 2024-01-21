@@ -37,7 +37,7 @@ export default function MaintenanceLottie({}: Props) {
         <h3 className="text-4xl font-bold text-center">자인그린바이오</h3>
       </div>
       <div>
-        <p className="text-2xl text-center px-14">
+        <p className="text-xl text-center text-nowrap px-14 md:text-2xl">
           🛠︎현재 서버 점검중입니다.🛠︎
         </p>
       </div>
