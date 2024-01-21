@@ -31,13 +31,15 @@ export default function MaintenanceLottie({}: Props) {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center w-full gap-3 p-16 fade_in">
+    <div className="flex flex-col items-center justify-center w-full gap-3 p-16 text-nowrap fade_in">
       <div className="flex items-center gap-2">
-        <Image src={"/logo.png"} width={36} height={36} alt="" />
-        <h3 className="text-4xl font-bold text-center">자인그린바이오</h3>
+        <Image src={"/logo.png"} width={windowSize.width > 480 ? 36 : 28} height={windowSize.width > 480 ? 36 : 28} alt="" />
+        <h3 className="text-xl font-bold text-center sm:text-2xl md:text-4xl">
+          자인그린바이오
+        </h3>
       </div>
       <div>
-        <p className="text-xl text-center text-nowrap px-14 md:text-2xl">
+        <p className="text-lg text-center sm:text-xl px-14 md:text-2xl">
           🛠︎현재 서버 점검중입니다.🛠︎
         </p>
       </div>
