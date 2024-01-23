@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-// import Footer from "@/components/footer";
-// import { Nav } from "@/components/nav";
-// import { MobileNav } from "@/components/nav/mobileNav";
+import Footer from "@/components/footer";
+import Navigation from "@/components/nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,29 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body
-        className={
-          inter.className +
-          "relative"
-        }
-      >
-        {/* <div className="sticky top-0 z-40 flex items-center justify-between w-full h-12 p-10 bg-white box">
-          <a href="/" className="flex items-center gap-3 cursor-pointer group">
-            <div className="w-12 h-12 group-hover:animate-[pulse_1s_ease-in-out_forwards] bg-emerald-600"></div>
-            <span className="md:text-md lg:text-lg font-semibold text-nowrap group-hover:animate-[pulse_1s_ease-in-out_forwards]">
-              자인그린바이오
-            </span>
-          </a>
-          <nav className="hidden pl-8 md:flex">
-            <Nav />
-          </nav>
-          <nav className="block md:hidden">
-            <MobileNav />
-          </nav>
-        </div>
+      <body className={inter.className + "relative"}>
+        <Navigation />
         {children}
-        <Footer /> */}
-        {children}
+        <Footer />
       </body>
     </html>
   );

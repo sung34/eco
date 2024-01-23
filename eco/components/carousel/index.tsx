@@ -10,14 +10,15 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import img1 from "@/public/ecoimg1.webp";
+import img1 from "@/public/img/slides1.jpg";
+import img2 from "@/public/img/slides2.jpg";
 import Image from "next/image";
 
 import Autoplay from "embla-carousel-autoplay";
 
 export function CarouselDemo() {
   const plugin = React.useRef(
-    Autoplay({ delay: 5000, playOnInit: true, stopOnInteraction: true })
+    Autoplay({ delay: 4000, playOnInit: true, stopOnInteraction: true })
   );
   return (
     <Carousel
@@ -28,27 +29,50 @@ export function CarouselDemo() {
       plugins={[plugin.current]}
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
-      className="w-full"
+      className="relative w-full cursor-pointer"
     >
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index}>
-            <div className="py-2">
-              <Card>
-                <CardContent className="relative flex items-center justify-center w-full overflow-hidden rounded-sm h-80 md:h-[600px]">
-                  {/* <span className="text-4xl font-semibold">{index + 1}</span> */}
-
-                  <Image
-                    className="transition-opacity duration-300 opacity-75 hover:opacity-100"
-                    fill
-                    src={img1}
-                    alt=""
-                  />
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
+        <CarouselItem>
+          <Card>
+            <CardContent className="relative p-0">
+              {/* <span className="text-4xl font-semibold">{index + 1}</span> */}
+              <article className="absolute z-10 p-10 transform -translate-x-1/2 -translate-y-1/2 rounded-md backdrop-blur-md top-1/2 left-1/2">
+                <h3 className="text-xl font-semibold">
+                  Lorem ipsum, dolor sit amet consectetur
+                </h3>
+                <p className="text-gray-700">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Saepe, tempora excepturi? Cupiditate vero hic in recusandae
+                  consequuntur, earum fugiat ab, quibusdam labore consectetur
+                  voluptatibus nostrum delectus ea, culpa obcaecati illum.
+                </p>
+              </article>
+              <div className="relative w-full max-h-[500px] aspect-video">
+                <Image fill src={img1} alt="" />
+              </div>
+            </CardContent>
+          </Card>
+        </CarouselItem>
+        <CarouselItem>
+          <Card>
+            <CardContent className="relative p-0">
+              <article className="absolute z-10 p-10 transform -translate-x-1/2 -translate-y-1/2 rounded-md backdrop-blur-md top-1/2 left-1/2">
+                <h3 className="text-xl font-semibold">
+                  Lorem ipsum, dolor sit amet consectetur
+                </h3>
+                <p className="text-gray-700">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Saepe, tempora excepturi? Cupiditate vero hic in recusandae
+                  consequuntur, earum fugiat ab, quibusdam labore consectetur
+                  voluptatibus nostrum delectus ea, culpa obcaecati illum.
+                </p>
+              </article>
+              <div className="relative w-full max-h-[500px] aspect-video">
+                <Image fill src={img2} alt="" />
+              </div>
+            </CardContent>
+          </Card>
+        </CarouselItem>
       </CarouselContent>
       <CarouselPrevious
         variant={"ghost"}

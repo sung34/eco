@@ -15,7 +15,8 @@ export default function SideSubNav({ subNavs }: Props) {
       { subNavs.map((subNav, _) => (
         <li key={uuid()}>
           <Link href={subNav.href}>
-            <h3>
+            {/* Todo: text-clip effect with green-100/150 */}
+            <h3 className=''>
               {subNav.title}
             </h3>
           </Link>

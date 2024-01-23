@@ -1,16 +1,9 @@
-// import { CarouselDemo } from "@/components/carousel";
-
-import MaintenanceLottie from "@/components/maintenance";
-
+import { CarouselDemo } from "@/components/carousel";
 
 export default function Home() {
   return (
     <main className="">
-     
-      {/* <div className="relative z-0 w-full fade_in">
-        <CarouselDemo />
-      </div> */}
-      <MaintenanceLottie />
+      <CarouselDemo />
     </main>
   );
 }
