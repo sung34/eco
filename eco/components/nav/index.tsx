@@ -8,7 +8,7 @@ type Props = {};
 
 export default function Navigation({}: Props) {
   return (
-    <div className="sticky top-0 z-40 flex items-center justify-between w-full h-12 px-5 py-10 bg-white md:justify-around box">
+    <header className="sticky top-0 z-40 flex items-center justify-between w-full h-12 py-10 bg-white shadow-inner shadow-muted-foreground inner-x">
       <Link href="/" className="flex items-center gap-3 cursor-pointer group">
         <div className="w-8 h-8 relative group-hover:animate-[pulse_1s_ease-in-out_forwards]">
           <Image src={logo} fill alt="" />
@@ -23,6 +23,6 @@ export default function Navigation({}: Props) {
       <nav className="block md:hidden">
         <MobileNav />
       </nav>
-    </div>
+    </header>
   );
 }

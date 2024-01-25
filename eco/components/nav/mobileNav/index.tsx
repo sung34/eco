@@ -11,7 +11,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { AccordionDemo } from "./accordionNav";
+import { MobileNavAccordian } from "./accordionNav";
 import { AlignJustifyIcon } from "lucide-react";
 import logo from "@/public/img/logo.png";
 import Image from "next/image";
@@ -34,11 +34,8 @@ export function MobileNav() {
               <h4><span>(주)</span>자인그린바이오</h4>
             </div>
           </SheetTitle>
-          {/* <SheetDescription>
-            Make changes to your profile here. Click save when youre done.
-          </SheetDescription> */}
         </SheetHeader>
-        <AccordionDemo/>
+        <MobileNavAccordian/>
       </SheetContent>
     </Sheet>
   );

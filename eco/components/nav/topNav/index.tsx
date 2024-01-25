@@ -58,13 +58,6 @@ export function TopNav() {
                 지구의 건강을 생각하는 농업 방법으로 더 나은 미래를 위해
                 노력합니다.
               </ListItem>
-              <ListItem href="/intro/vision" title="회사 비전">
-                건강한 지구와 더 나은 내일을 위해 지속 가능한 농업 방법을 통한
-                생태계의 균형과 조화를 추구합니다. 우리의 비전은 친환경 혁신을
-                통해 농업 생산성을 향상시키면서도 환경을 보호하고, 장기적으로는
-                자연과 인류가 상생하는 세계를 만드는 것입니다. 이를 위해 지속
-                가능한 자원 사용과 혁신적인 기술 개발에 전념하고 있습니다.
-              </ListItem>
               <ListItem href="/intro/certification" title="특허"></ListItem>
             </ul>
           </NavigationMenuContent>

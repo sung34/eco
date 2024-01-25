@@ -1,4 +1,4 @@
-import SideSubNav from "@/components/nav/sideSubNav";
+import SideSubNav from "@/components/sideSubNav";
 
 export default function IntroductionLayout({
   children,
@@ -6,17 +6,15 @@ export default function IntroductionLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <div className="w-full p-4 text-2xl text-center text-white bg-slate-600">
-      this is from Intro Routes Layout
-      </div>
+    <div className="inner-x lg:grid lg:grid-cols-6">
       <SideSubNav
+        className=""
         subNavs={[
-          { title: "empty1", href: "/" },
-          { title: "empty2", href: "/" },
+          { title: "회사 소개", href: "/intro" },
+          { title: "특허", href: "/intro/certification" },
         ]}
       />
-      {children}
-    </>
+      <section className="lg:col-span-5 lg:col-start-2">{children}</section>
+    </div>
   );
 }
