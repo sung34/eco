@@ -12,7 +12,7 @@ export default function Footer({}: Props) {
       <nav className="grid flex-col items-center grid-cols-2 font-semibold gap-7 lg:grid-cols-5">
         <section className="flex items-center justify-between flex-grow w-full col-span-2 gap-3">
           <figure className="relative w-20 h-20 ">
-            <Image fill objectFit="contain" src={logo} alt="" />
+            <Image fill className="object-contain" src={logo} alt="" />
           </figure>
           <article className="flex items-center flex-grow gap-5 leading-tight">
             <h1 className="text-nowrap">
@@ -51,7 +51,7 @@ export default function Footer({}: Props) {
               className="transition-all after:bg-white hover:text-white hover-underline-animation"
               href={"/intro/certification"}
             >
-              특허 현황
+              특허
             </Link>
           </li>
         </ul>
@@ -68,9 +68,9 @@ export default function Footer({}: Props) {
           <li>
             <Link
               className="transition-all after:bg-white hover:text-white hover-underline-animation"
-              href={"/prod/inquiry"}
+              href={"/prod/info"}
             >
-              제품 보기
+              제품 정보
             </Link>
           </li>
         </ul>

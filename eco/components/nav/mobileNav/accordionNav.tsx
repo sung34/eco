@@ -49,9 +49,9 @@ export function MobileNavAccordian() {
           <SheetClose asChild>
             <Link
               className="w-full h-full text-lg hover:bg-emerald-200 hover:bg-clip-text"
-              href={"/prod/inquiry"}
+              href={"/prod/info"}
             >
-              용도
+              제품 정보
             </Link>
           </SheetClose>
         </AccordionContent>

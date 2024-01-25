@@ -93,7 +93,7 @@ export function TopNav() {
                 이점을 제공합니다. 이 제품은 생분해되어 친환경적으로 유기질
                 비료로 활용됩니다.
               </ListItem>
-              <ListItem href="/prod/inquiry" title="용도"></ListItem>
+              <ListItem href="/prod/info" title="제품 정보"></ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

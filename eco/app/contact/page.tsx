@@ -1,9 +1,12 @@
-import React from 'react'
+import StyledArticle from "@/components/styledArticle";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 export default function ContactPage({}: Props) {
   return (
-    <div>Contact Page</div>
-  )
+    <div className="min-h-screen">
+      <StyledArticle mainHeader="페이지 준비중입니다." />
+    </div>
+  );
 }

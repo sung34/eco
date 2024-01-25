@@ -12,7 +12,7 @@ export default function ProductLayout({
           className=""
           subNavs={[
             { title: "친환경 멀칭지란?", href: "/prod" },
-            { title: "용도", href: "/prod/inquiry" },
+            { title: "제품 정보", href: "/prod/info" },
           ]}
         />
       </section>
